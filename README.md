@@ -1,3 +1,11 @@
+# Command usage (Default prefix)
+
+`!?clone https://open.spotify.com/playlist/5Y7VXK51pJ7jP5YBTkRBU4?si=1387244d2aa44068`
+
+`!?add https://open.spotify.com/track/7DPHwIQ52SrVzIHzhHI2Mh?si=9fb74fe2bb01433b playlistname`
+
+`!?stats`
+
 # Important
 
 If for some reason you delete the `node_modules` and you can't start the bot because discord.js doesn't allow selfbots anymore go to `\node_modules\discord.js\src\client\Client.js` and on line 35 replace `'Bot'` with `''`
