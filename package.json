@@ -1,0 +1,20 @@
+{
+  "name": "spotify-selfbot",
+  "version": "1.0.0",
+  "description": "A Discord selfbot with Spotify commands, pretty basic pal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "spotify",
+    "discord.js"
+  ],
+  "author": "removal",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "request": "^2.88.2"
+  }
+}
