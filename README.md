@@ -4,6 +4,8 @@
 
 `!?add https://open.spotify.com/track/7DPHwIQ52SrVzIHzhHI2Mh?si=9fb74fe2bb01433b playlistname`
 
+`!?create killedTests69@gmail.com removalGoBr Password1337`
+
 `!?stats`
 
 # Important
