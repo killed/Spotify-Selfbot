@@ -162,4 +162,16 @@ module.exports.get = function(endpoint, callback) {
     });
 }
 
+module.exports.create = function(email, username, password, callback) {
+    post({ url: "https://spclient.wg.spotify.com/signup/public/v1/account", form: { "key": "a1e486e2729f46d6bb368d6b2bcda326", "displayname": username, "password_repeat": password, "password": password, "username": username, "birth_year": "2000", "birth_month": "08", "birth_day": "01", "gender": "male", "email": email, "iagree": "1" } }, function(error, response, body) {
+        if (error)
+            return callback(false, "Failed to make request to api");
+
+        if (body["status"] == 1)
+            callback(true, `Successfully registered @${username}\n\n\`${email}:${username}:${password}\``);
+        else
+            callback(false, JSON.stringify(body["errors"]));
+    });
+}
+
 module.exports.addSongToPlaylist = addSongToPlaylist;
